@@ -1,0 +1,387 @@
+shell Notes
+
+wget -P /system/sbin https://nodejs.org/dist/v4.5.0/node-v4.5.0-linux-armv7l.tar.gz
+
+
+tar xvf node-v4.5.0-linux-armv7l.tar.gz
+
+
+mv node-v4.5.0-linux-armv7l nodejs
+
+
+cp nodejs/bin/node ~/sbin
+
+ 
+cd ~/sbin
+
+ln -s ../storage/emulated/0/Download/nodejs/lib/node_modules/npm/bin/npm-cli.js npm
+
+
+
+
+curl --insecure https://www.npmjs.org/install.sh | sh
+
+
+curl -k https://www.npmjs.org/install.sh | sh
+
+
+
+
+
+
+
+curl -k https://raw.githubusercontent.com/pfalcon/optware-android/master/optware-install-via-adb.sh | sh
+
+
+https://dan.drown.org/android/opkg.tar.gz
+
+
+
+http://downloads.yoctoproject.org/releases/opkg/opkg-0.3.4.tar.gz
+
+
+
+
+
+How to Install the package system
+
+    Note: /data/local is writable by only root. Follow these directions as root
+    Download opkg.tar.gz into /data/local on your phone
+    cd /data/local
+    tar zxvf opkg.tar.gz # note: if tar fails with "tar: command not found", try the command "busybox tar zxvf opkg.tar.gz", if that fails, download "busybox binary" below
+    export PATH=$PATH:/data/local/bin # you'll want this in your .profile
+    opkg update # update the list of available packages
+    opkg install opkg # install opkg over itself, so opkg knows what version is installed
+    opkg list # list of all available packages
+
+How to install a package
+
+opkg update
+opkg install [package]
+
+
+
+
+cd /data/local
+curl -k https://dan.drown.org/android/opkg.tar.gz -O
+tar zxvf opkg.tar.gz
+export PATH=$PATH:/data/local/bin
+opkg update
+opkg install opkg
+opkg list
+
+
+
+
+
+
+
+
+
+
+
+cd /data/local
+curl -k http://downloads.yoctoproject.org/releases/opkg/opkg-0.3.4.tar.gz -O
+tar zxvf opkg-0.3.4.tar.gz
+export PATH=$PATH:/data/local/bin
+opkg update
+opkg install opkg
+opkg list
+
+
+
+
+echo $PATH
+
+
+
+
+
+
+su
+export PATH=$PATH:/data/data/org.dyne.zshaolin/files/system/libexec/git-core
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/data/data/com.spartacusrex.spartacuside/files
+
+
+
+
+
+
+/data/data/jackpal.androidterm/app_HOME
+
+
+
+
+
+/data/data/com.spartacusrex.spartacuside/files
+
+
+
+
+
+sudo mkdir /opt/popcorn-time
+sudo wget -qO- https://dl-a.popcorn-time.to/Popcorn-Time-linux64.tar.gz | sudo tar Jx -C /opt/popcorn-time
+sudo ln -sf /opt/popcorn-time/Popcorn-Time /usr/bin/popcorn-time
+sudo mousepad /usr/share/applications/popcorntime.desktop
+
+
+
+curl -k https://dl-a.popcorn-time.to/Popcorn-Time-linux64.tar.gz -O
+tar zxvf Popcorn-Time-linux64.tar.gz /usr/bin/popcorn-time
+
+
+
+
+
+
+[Desktop Entry] Version = 1.0 Type = Application Terminal = false Name = Popcorn Time Exec = /usr/bin/popcorn-time Icon = /opt/popcorn-time/popcorntime.png Categories = Application;
+
+
+
+
+
+
+sudo wget -q -O /opt/popcorn-time/popcorntime.png https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png
+
+
+
+
+
+
+
+
+
+compresss:
+
+tar -zcvf git-core.tar.gz ./
+
+tar -zcvf java.tar.gz ./
+
+
+
+
+
+tar -zcvf sshelper.tar.gz ./
+
+
+
+cd /sdcard/333
+cat /data/data/com.arachnoid.sshelper/sshelper.tar.gz > sshelper.tar.gz
+
+
+
+cat /data/data/com.arachnoid.sshelper/bin/
+
+
+
+
+
+
+
+
+decompress:
+
+tar -zcvf git-core.tar.gz git-core
+
+
+tar zxvf git-core.tar.gz
+
+tar zxvf 
+
+tar zxvf 
+tar zxvf 
+tar zxvf 
+
+
+tar zxvf java.tar.gz
+
+
+
+
+mount -o rw,remount /system
+cd /system/bin
+curl -k https://esironal.github.io/android/git-core.tar.gz -O
+tar zxvf git-core.tar.gz
+rm git-core.tar.gz
+
+
+
+
+
+
+
+
+
+
+
+
+
+git://github.com/esironal/esironal.github.io.git
+
+https://github.com/esironal/esironal.github.io
+
+
+git://github.com/esironal/HtmlArray.git
+
+
+
+
+
+
+/storage/emulated/0/Download/kbox3-install-base
+
+
+
+
+
+cd /data/data/jackpal.androidterm
+
+
+
+
+
+
+cat /sdcard/Download/kbox3-install-base > kbox3-install-base
+
+
+chmod 755 kbox3-install-base
+
+
+
+./kbox3-install-base
+
+
+
+
+cat /sdcard/Download/busybox_noopts > busybox
+
+
+chmod 755 busybox
+
+
+
+busybox_noopts
+
+
+
+
+/data/data/jackpal.androidterm/installer-image
+
+
+
+
+mount -o rw,remount /system
+
+
+
+/data/data/darkslide.com.supersume/files/runit.sh
+
+
+
+
+cd /data/data/darkslide.com.supersume/files
+tar -zcvf supersume.tar.gz ./
+cd /sdcard/333
+cat /data/data/darkslide.com.supersume/files/supersume.tar.gz > supersume.tar.gz
+
+
+
+
+
+
+cat /sdcard/333/supersume/runit.sh > /data/data/darkslide.com.supersume/files/runit.sh
+
+
+
+cat /data/data/darkslide.com.supersume/files/su >/system/xbin/su
+chmod 0755 /system/xbin/su
+cat /data/data/darkslide.com.supersume/files/su >/system/xbin/sugote
+chmod 0755 /system/xbin/sugote
+cat /data/data/darkslide.com.supersume/files/supolicy >/system/xbin/supolicy
+chmod 0755 /system/xbin/supolicy
+cat /data/data/darkslide.com.supersume/files/libsupol.so >/system/lib/libsupol.so
+chmod 0644 /system/lib/libsupol.so
+
+
+
+/data/data/darkslide.com.supersume/files/su
+
+
+
+
+
+
+am start -n packageName/pkgName.ActivityName
+
+
+
+
+pl.solidexplorer.SolidExplorer
+
+
+
+
+pl.solidexplorer
+
+
+
+
+am start -n pl.solidexplorer/pl.solidexplorer.SolidExplorer
+
+am start -n pl.solidexplorer/pl.solidexplorer.SolidExplorer -d /data/data
+
+
+
+
+am start -n packageName/pkgName.ActivityName
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+kkk
